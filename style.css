@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body p {
@@ -17,12 +17,12 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster Two', cursive;
 }
 
 header h1 {
   opacity: 0.4;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 header video.portrait {
@@ -180,12 +180,18 @@ section {
   background-image: url("media/blueseamless.jpeg")
 }
 
+#bg-wymm {
+  background-image: url("media/twg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 #yellow-dots {
   background-image: url("media/habg.jpg");
   background-size: 1920px;
   opacity: 0.35;
   background-position: 20% 100%;
-  background-repeat: none;
+  background-repeat: no-repeat;
 
 }
 
@@ -226,8 +232,16 @@ section {
   overflow: hidden;
 
 }
+.parallax-parent-125vh {
+  height: 125vh;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  z-index: -2;
+  overflow: hidden;
+}
 
-.parallax-parent > * {
+.parallax-parent > *, .parallax-parent-125vh > * {
   height: 200%;
   position: relative;
   top: -100%;
@@ -247,6 +261,7 @@ section {
 
 #shh-icon {
   height: 10vh;
+  padding-bottom: 2rem;
 }
 
 #lure img {
@@ -266,11 +281,16 @@ section {
 .font-lobster {
   font-family: 'Lobster', cursive;
 }
+.font-lobster-two {
+  font-family: 'Lobster Two', cursive;
+}
 
 .wymm-gif {
+  
 }
-/* @media screen and (orientation: landscape) {
-   #scouting-container {
-   height:
-   }
-   } */
+
+
+.wymm-vid {
+  max-height: 100%;
+  max-width: 100%;
+}

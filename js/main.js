@@ -71,7 +71,7 @@ new ScrollMagic.Scene({
     .addTo(controller);
 
 // both parallax
-$(".parallax-parent").each(function() {
+$(".parallax-parent, .parallax-parent-125vh").each(function() {
     new ScrollMagic.Scene({
         triggerElement: this,
         triggerHook: "onEnter",
@@ -142,3 +142,27 @@ $("#scouting, #lure").each(function() {
 //         // .addIndicators()
 //         .addTo(controller);
 // });
+
+// $(".wymm-vid").each(function() {
+new ScrollMagic.Scene({
+    triggerElement: "#wymm-me",
+    triggerHook: "onEnter",
+    })
+    .on("enter", function(e) {
+        $(".wymm-vid").each(function() {
+            this.play();
+        })
+            })
+    .addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: "#reveal1",
+    triggerHook: "onLeave"
+})
+    .on("leave", function(e) {
+        $(".wymm-vid").each(function() {
+            this.pause();
+            this.currentTime = 0;
+        })
+            })
+    .addTo(controller);
