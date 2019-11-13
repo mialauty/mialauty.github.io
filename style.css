@@ -188,9 +188,9 @@ section {
 
 #yellow-dots {
   background-image: url("media/habg.jpg");
-  background-size: 1920px;
+  /* background-size: 1920px; */
   opacity: 0.35;
-  background-position: 20% 100%;
+  background-position: center center;
   background-repeat: no-repeat;
 
 }
